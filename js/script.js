@@ -16,7 +16,8 @@ function myButtonClicked() {
   if (userInteger == 0) {
     document.getElementById("answer").innerHTML =
       "The integer is neither.";
-  } else {
+  }
+  else {
     document.getElementById("answer").innerHTML =
       "The integer is negative.";
   }
