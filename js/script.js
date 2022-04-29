@@ -9,11 +9,16 @@
  */
 function myButtonClicked() {
   const userInteger = parseInt(document.getElementById("integer").value);
-  if (userInteger > -1) {
+  if (userInteger > 0) {
     document.getElementById("answer").innerHTML =
       "The integer is positive.";
+    }
+  if (userInteger == 0) {
+    document.getElementById("answer").innerHTML =
+      "The integer is neither.";
   } else {
     document.getElementById("answer").innerHTML =
       "The integer is negative.";
   }
 }
+
